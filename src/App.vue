@@ -7,7 +7,7 @@ import DropZone from './components/DropZone.vue'
     <h1>Modification d'un fichier IPYNB</h1>
     <p style="text-align: center">
       <em><a href="https://github.com/mathieunicolas/ipynb-meta">source</a></em> -
-      <em><a href="https://github.com/nuxt-mathieunicolas/ipynb-meta/blob/main/LICENSE">licence MIT</a></em> -
+      <em><a href="https://github.com/mathieunicolas/ipynb-meta/blob/main/LICENSE">licence MIT</a></em> -
       <em><a href="mailto: contact@nsi.rocks">contact</a></em>
     </p>
     <h2>Mode d'emploi</h2>
