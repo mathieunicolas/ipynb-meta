@@ -163,7 +163,6 @@ const { isOverDropZone } = useDropZone(dropZoneRef, onDrop)
   flex-direction: row;
   justify-content: space-between;
   max-height: 5rem;
-  overflow-y: scroll;
 }
 
 .cell:hover {
@@ -233,6 +232,7 @@ const { isOverDropZone } = useDropZone(dropZoneRef, onDrop)
 .cell-source {
   padding: 0.5rem;
   font-family: monospace;
+  overflow-y: scroll;
 }
 
 .raw {
