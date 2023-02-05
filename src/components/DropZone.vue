@@ -233,6 +233,7 @@ const { isOverDropZone } = useDropZone(dropZoneRef, onDrop)
   padding: 0.5rem;
   font-family: monospace;
   overflow-y: scroll;
+  flex-grow: 2;
 }
 
 .raw {
