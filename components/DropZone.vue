@@ -14,7 +14,7 @@ function onDrop(files) {
 
 const onUpload = (event) => {
     const file = event.target.files[0]
-    
+
     file.text().then(e => fileRef.value = JSON.parse(e))
 }
 
@@ -22,19 +22,21 @@ const { isOverDropZone } = useDropZone(dropZoneRef, onDrop)
 </script>
 
 <template>
-    <UCard v-if="fileRef === undefined" ref="dropZoneRef" class="flex flex-row justify-center items-center cursor-pointer w-3/4 lg:w-1/2 h-48 m-auto relative hover:bg-primary-300" :ui="isOverDropZone ? { background: 'bg-primary-400' } : { background: 'bg-primary-200' }">
-        <input type="file" @change="onUpload" class="w-full h-full absolute top-0 left-0 opacity-0 cursor-pointer" id="input_file" />
+    <UCard v-if="fileRef === undefined" ref="dropZoneRef"
+        class="flex flex-row justify-center items-center cursor-pointer w-3/4 lg:w-1/2 h-48 m-auto relative hover:bg-gray-200 hover:dark:bg-gray-500"
+        :ui="isOverDropZone ? { background: 'bg-gray-200 dark:bg-gray-500' } : { background: 'bg-gray-100 dark:bg-gray-600' }">
+        <input type="file" @change="onUpload" class="w-full h-full absolute top-0 left-0 opacity-0 cursor-pointer"
+            id="input_file" />
         <div>Déposez votre fichier IPYNB ici, ou cliquez pour parcourir vos fichiers.</div>
     </UCard>
 </template>
 
 <style scoped>
-
 .over-drop {
-  background-color: rgba(0, 128, 0, 0.26);
+    background-color: rgba(0, 128, 0, 0.26);
 }
 
 .not-over-drop {
-  background-color: rgba(0, 51, 128, 0.26);
+    background-color: rgba(0, 51, 128, 0.26);
 }
 </style>
